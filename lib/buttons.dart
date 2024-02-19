@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
 
-
+  final String title ;
+  final Color color;
+  final VoidCallback onPress;
+   
    MyButton({Key? key,
      required this.title,
      this.color = const Color(0xffa5a5a5),
      required  this.onPress
    }) : super(key: key);
-
-   final String title ;
-  final Color color;
-  final VoidCallback onPress;
 
   @override
   Widget build(BuildContext context) {
